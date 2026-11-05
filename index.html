@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090c0b">
+  <meta name="description" content="Albi — Programmer. A personal portfolio with interactive frontend demos.">
+  <title>Albi — Programmer & Builder</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=2">
+  <script src="script.js?v=2" defer></script>
+</head>
+<body>
+  <svg class="icon-defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><symbol id="arrow" viewBox="0 0 24 24"><path d="M5 19 19 5M5 5h14v14"/></symbol><symbol id="code" viewBox="0 0 24 24"><path d="m8 6-6 6 6 6m8-12 6 6-6 6m-3-15-2 18"/></symbol><symbol id="terminal-icon" viewBox="0 0 24 24"><path d="m4 6 6 6-6 6m9 0h7"/></symbol><symbol id="play" viewBox="0 0 24 24"><path d="m8 5 11 7-11 7Z"/></symbol></svg>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="header">
+    <a class="brand" href="#home" aria-label="Albi home"><span class="brand-symbol">a<span>_</span></span><span class="brand-text">albi<span>.portfolio</span></span></a>
+    <nav class="desktop-nav" aria-label="Main navigation"><a href="#projects"><span>01</span> Projects</a><a href="#about"><span>02</span> About</a><a href="#stack"><span>03</span> The code</a></nav>
+    <a class="header-contact" href="#contact">Let’s talk <svg class="icon"><use href="#arrow"/></svg></a>
+    <button class="menu-button" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span></button>
+  </header>
+  <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation" hidden><a href="#projects">01 / Projects</a><a href="#about">02 / About</a><a href="#stack">03 / The code</a><a href="#contact">04 / Contact</a></nav>
+  <main id="main">
+    <section class="hero section-pad" id="home" aria-labelledby="hero-title">
+      <div class="hero-grid" aria-hidden="true"></div><div class="hero-glow" aria-hidden="true"></div>
+      <div class="hero-layout">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="status-dot"></span> ALBI / PROGRAMMER</div>
+          <h1 id="hero-title">Ideas in.<br><span>Code out.</span><span class="cursor" aria-hidden="true">_</span></h1>
+          <p class="hero-description">I’m Albi, a programmer.<br>This is my space for the things I build.</p>
+          <div class="hero-actions"><a class="button button-primary" href="#projects">Explore projects <svg class="icon"><use href="#arrow"/></svg></a><a class="terminal-link" href="#terminal"><svg class="icon"><use href="#terminal-icon"/></svg> Open terminal</a></div>
+          <div class="hero-comment"><span>//</span> Less decoration. More execution.</div>
+        </div>
+        <div class="hero-editor-wrap">
+          <div class="editor-annotation"><span class="annotation-line"></span> A LITTLE LOOK UNDER THE HOOD</div>
+          <div class="editor">
+            <div class="editor-bar"><div class="window-dots" aria-hidden="true"><i></i><i></i><i></i></div><span>~/albi/portfolio</span><svg class="icon"><use href="#code"/></svg></div>
+            <div class="editor-tabs" role="tablist" aria-label="Code preview files"><button class="editor-tab active" id="profile-tab" role="tab" aria-selected="true" aria-controls="profile-panel" data-tab="profile"><span class="file-icon">JS</span> profile.js <span class="file-dot"></span></button><button class="editor-tab" id="readme-tab" role="tab" aria-selected="false" aria-controls="readme-panel" data-tab="readme" tabindex="-1"><span class="readme-icon">#</span> README.md</button></div>
+            <div class="code-panel" id="profile-panel" role="tabpanel" aria-labelledby="profile-tab" tabindex="0"><ol class="code-lines"><li><span class="comment">// A person behind the syntax.</span></li><li><span class="purple">const</span> <span class="blue">developer</span> <span class="muted">=</span> {</li><li>  name: <span class="green">'Albi'</span>,</li><li>  role: <span class="green">'Programmer'</span>,</li><li> </li><li>  <span class="comment">// The next lines are yours.</span></li><li>  stack: [],</li><li>  projects: [],</li><li> </li><li>  portfolio: {</li><li>    mode: <span class="green">'frontend-only'</span>,</li><li>    status: <span class="green">'in progress'</span></li><li>  }</li><li>};</li><li> </li><li><span class="purple">export default</span> <span class="blue">developer</span>;</li></ol></div>
+            <div class="code-panel readme-panel" id="readme-panel" role="tabpanel" aria-labelledby="readme-tab" tabindex="0" hidden><span class="comment"># ALBI / PROGRAMMER</span><h3>Hello, world.</h3><p>A personal portfolio, built with<br>HTML, CSS, and vanilla JavaScript.</p><p class="comment">## Still to add</p><p>→ My real projects<br>→ My languages & frameworks<br>→ My story & contact details</p><span class="readme-note">No made-up experience. Just a starting point.</span></div>
+            <div class="editor-status"><span><span class="branch-icon">⑂</span> main <span class="status-diamond">◇</span></span><span>UTF-8 <span>JavaScript</span><span class="status-check">✓</span></span></div>
+          </div>
+          <div class="editor-floating"><span class="floating-icon"><svg class="icon"><use href="#code"/></svg></span><span>Built from the ground up.<small>No templates. No backend.</small></span><span class="floating-pulse"></span></div>
+        </div>
+      </div>
+      <div class="hero-footer"><span>PERSONAL PORTFOLIO <span class="dim">/ V.02</span></span><span class="hero-footer-middle"><span class="plus">+</span> LOGIC MEETS CRAFT</span><a href="#projects">SCROLL TO EXPLORE <span>↓</span></a></div>
+    </section>
+
+    <section class="projects section-pad" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading reveal"><div><div class="eyebrow section-kicker"><span>01</span> / SELECTED BUILDS</div><h2 id="projects-title">Show, don’t <span>just tell.</span></h2></div><p>Two small demos built into this portfolio.<br>Your real projects can take their place.</p></div>
+      <div class="project-grid">
+        <article class="project-card reveal">
+          <div class="project-visual workspace-visual"><div class="project-number">01 / INTERFACE</div><div class="mini-app" id="workspace-demo"><div class="mini-app-bar"><span class="mini-logo">a_</span><span>workspace</span><button id="theme-toggle" class="theme-toggle" aria-label="Switch workspace demo to light theme" aria-pressed="false">◐</button></div><div class="mini-app-content"><aside><span class="mini-nav active">▦ <span>Overview</span></span><span class="mini-nav">⌘ <span>Projects</span></span><span class="mini-nav">◷ <span>Activity</span></span><span class="mini-nav">⚙ <span>Settings</span></span><div class="mini-avatar">A</div></aside><div class="mini-workspace"><span class="mini-breadcrumb">Workspace / Overview</span><div class="mini-title">Make room for focus.<span>＋</span></div><div class="mini-stats"><div><span>01</span><small>PLAN</small></div><div><span>02</span><small>BUILD</small></div><div><span>03</span><small>REFINE</small></div></div><div class="mini-task"><span class="task-check checked">✓</span><span>Set the foundation<small>Structure & layout</small></span><span class="task-tag">Done</span></div><div class="mini-task"><span class="task-check"></span><span>Bring it to life<small>Interaction & detail</small></span><span class="task-tag building">Building</span></div><div class="mini-chart" aria-hidden="true"><svg viewBox="0 0 300 55" preserveAspectRatio="none"><defs><linearGradient id="chart-fill" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#a7e8a0" stop-opacity=".22"/><stop offset="100%" stop-color="#a7e8a0" stop-opacity="0"/></linearGradient></defs><path d="M0 48 20 45 40 48 65 30 85 37 110 24 135 27 155 14 180 23 210 12 240 16 265 6 300 1V55H0Z" fill="url(#chart-fill)"/><path d="M0 48 20 45 40 48 65 30 85 37 110 24 135 27 155 14 180 23 210 12 240 16 265 6 300 1" fill="none" stroke="#a7e8a0" stroke-width="1.5"/></svg><span>ILLUSTRATIVE DATA</span></div></div></div></div><span class="visual-hint">TRY THE THEME SWITCH ↗</span></div>
+          <div class="project-content"><div class="project-meta"><span>LIVE FRONTEND DEMO</span><span>01</span></div><h3>Command center<span>↗</span></h3><p>A focused dashboard interface. Switch its theme and see the same layout in a different light.</p><div class="project-bottom"><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><button class="detail-link" data-detail="workspace" aria-label="Read about the Command center demo"><svg class="icon"><use href="#code"/></svg></button></div></div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-visual sort-visual"><div class="project-number">02 / ALGORITHM</div><div class="sort-console"><div class="sort-console-top"><span><span class="small-dot"></span> sorting.visualizer</span><span>O(n²)</span></div><div class="bars" id="sort-bars" aria-label="An array visualized as vertical bars"></div><div class="sort-controls"><button id="sort-button"><svg class="icon"><use href="#play"/></svg> Run sort</button><button id="reset-sort" aria-label="Reset sorting demo">↻</button><span id="sort-status" role="status" aria-live="polite">Ready to run</span></div></div><span class="visual-hint">REAL CODE. REAL INTERACTION.</span></div>
+          <div class="project-content"><div class="project-meta"><span>LIVE FRONTEND DEMO</span><span>02</span></div><h3>Logic, visualized<span>↗</span></h3><p>An array finding its order. Run a selection sort and watch the algorithm do its work, step by step.</p><div class="project-bottom"><div class="tags"><span>Algorithms</span><span>JavaScript</span><span>DOM</span></div><button class="detail-link" data-detail="sort" aria-label="Read about the sorting demo"><svg class="icon"><use href="#code"/></svg></button></div></div>
+        </article>
+      </div>
+      <div class="project-foot reveal"><span><span class="small-dot"></span> THESE ARE PORTFOLIO DEMOS, NOT PAST CLIENT PROJECTS.</span><a href="#stack">Inspect the build <span>↗</span></a></div>
+    </section>
+
+    <section class="about section-pad" id="about" aria-labelledby="about-title">
+      <div class="about-copy reveal"><div class="eyebrow section-kicker"><span>02</span> / THE PERSON BEHIND THE CODE</div><h2 id="about-title">Behind the<br><span>keyboard.</span></h2><p class="about-intro">I’m Albi. I’m a programmer.</p><p class="muted-copy">This is where my story will go: the languages I use, the problems I work on, and the things I’ve learned along the way.</p><div class="profile-placeholder"><span class="small-dot"></span> BIO, STACK & EXPERIENCE TO BE ADDED</div></div>
+      <div class="terminal reveal" id="terminal"><div class="terminal-bar"><span><svg class="icon"><use href="#terminal-icon"/></svg> albi@portfolio: ~</span><span>interactive shell</span></div><div class="terminal-body"><div class="terminal-welcome"><span>Welcome to my corner of the internet.</span><br>Type <strong>help</strong> to explore. No installation required.</div><div id="terminal-output" class="terminal-output" role="log" aria-live="polite" aria-label="Terminal output"></div><form id="terminal-form" autocomplete="off"><label for="terminal-input"><span>albi</span><span class="terminal-path"> ~/portfolio</span> <span class="prompt-arrow">❯</span></label><input id="terminal-input" name="command" type="text" placeholder="help" aria-label="Terminal command" autocapitalize="off" spellcheck="false" autocomplete="off" maxlength="150"><button class="terminal-submit" type="submit" aria-label="Run terminal command">↵</button></form></div><div class="terminal-footer"><span><span class="small-dot"></span> LOCAL DEMO SHELL</span><span>NO COMMANDS RUN ON YOUR COMPUTER</span></div></div>
+    </section>
+
+    <section class="stack section-pad" id="stack" aria-labelledby="stack-title"><div class="stack-heading reveal"><div class="eyebrow section-kicker"><span>03</span> / THE IMPLEMENTATION</div><h2 id="stack-title">Under the <span>hood.</span></h2><p class="muted-copy">The stack behind this portfolio.<br>Small by choice. Frontend only.</p><div class="stack-chips"><span><span class="html-dot"></span> HTML</span><span><span class="css-dot"></span> CSS</span><span><span class="js-dot"></span> JavaScript</span></div></div><div class="file-tree reveal"><div class="file-tree-heading"><svg class="icon"><use href="#code"/></svg> portfolio/ <span>3 FILES. THAT’S IT.</span></div><div class="tree-row"><span class="tree-branch">├──</span><span class="file-type html-file">&lt;&gt;</span><span>index.html</span><span>The structure</span></div><div class="tree-row"><span class="tree-branch">├──</span><span class="file-type css-file">#</span><span>styles.css</span><span>The details</span></div><div class="tree-row"><span class="tree-branch">└──</span><span class="file-type js-file">JS</span><span>script.js</span><span>The interaction</span></div><div class="tree-bottom"><span>NO FRAMEWORKS</span><span>NO BACKEND</span><span>NO TRACKING</span></div></div></section>
+
+    <section class="contact section-pad" id="contact" aria-labelledby="contact-title"><div class="contact-line reveal"><span class="eyebrow section-kicker"><span>04</span> / OPEN A CONVERSATION</span><span class="code-comment">// start something</span></div><div class="contact-main reveal"><h2 id="contact-title">Let’s build<br><span>what’s next.</span></h2><button id="contact-button" class="contact-arrow" aria-label="View contact details"><svg class="icon"><use href="#arrow"/></svg></button></div><div class="contact-bottom reveal"><span>Contact details haven’t been added yet.</span><span class="code-comment">&lt;end /&gt;</span></div></section>
+  </main>
+  <footer class="footer"><a href="#home" class="footer-brand">albi<span>_</span></a><span>HANDCRAFTED IN HTML, CSS & JAVASCRIPT.</span><a href="#home">BACK TO TOP ↑</a></footer>
+  <dialog id="detail-dialog" aria-labelledby="dialog-title"><div class="dialog-content"><button class="dialog-close" aria-label="Close details">✕</button><div class="eyebrow">PORTFOLIO / PREVIEW NOTES</div><h2 id="dialog-title"></h2><p id="dialog-body"></p><button class="dialog-done">Back to the portfolio <span>↗</span></button></div></dialog>
+</body>
+</html>
